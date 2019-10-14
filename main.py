@@ -1,5 +1,6 @@
 from flask import Flask
 
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -14,7 +15,7 @@ def hello_world():
     return pagina, 200
 
 
-app.run()
+app.run(port=80, host='3.17.78.188', debug=True, threaded=True)
 
 
 
